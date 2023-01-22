@@ -1,17 +1,60 @@
+:root {
+
+    --primary-red: #953130;
+    --primary-grey: #545454;
+    --primary-white: #F2F0EB;
+    --secondary-dark-red: #792322;
+    --secondary-red: #B26161;
+    --secondary-light-red: #CFA1A1;
+    --secondary-white: #FFFFFF;
+    --accent-dark-blue: #177E89;
+    --accent-blue: #5CB4BD;
+    
+}
+
 .header {
 
-    color: red;
+    color: var(--primary-red);
+
+}
+
+/* Buttons */
+
+.btn {
+    background-color: var(--primary-red);
+    color: white;
+    transition-property: filter;
+    transition-duration: 0.5s; 
+}
+.btn:hover {
+    filter: brightness(120%);
+    transition-property: filter;
+    transition-duration: 0.5s;
+}
+
+.secondary-btn {
+    background-color: var(--accent-dark-blue);
+    color: white;
+}
+
+/* Character Sheet */
+
+.charSheet-base {
+
+    max-width: 90rem;
+    margin: auto;
+    margin-top: 5rem;
 
 }
 
 .charSheet-body {
 
-    
+    background-color: var(--primary-white);
 
 }
 
 .charSheet-cell {
 
-
+    max-width: 4rem;
 
 }

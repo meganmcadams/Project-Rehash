@@ -1,22 +1,47 @@
 {% extends "layout.html" %}
 {% block content %}
-    <div>
+    <div class="charSheet-base">
         
-        <h1>Character Name</h1>
-        <button>Edit</button>
+        <h1>Character Name <button class="btn" style="float: right">Edit</button> </h1>
 
-        <table class="table"> <!-- Character sheet body -->
+        <table class="table charSheet-body"> <!-- Character sheet body -->
 
-            <tbody class="charSheet-body"> <!-- Core stats --> 
+            <tbody>
 
                 <tr>
-                <td>2</td>
+                    <td class="charSheet-cell">
+                        <table>
+                            <tr> 
+                                <td> <p class="text-center"> Strength <br> 2</p> <td>
+                                <td> <p class="text-center"> Dexterity <br> 2</p> </td>
+                                <td> <p class="text-center"> Constitution <br> 2</p> </td>
+                                <td> <p class="text-center"> Intelligence <br> 2</p> </td>
+                                <td> <p class="text-center"> Wisdom <br> 2</p> </td>
+                                <td> <p class="text-center"> Charisma <br> 2</p> </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <td class="charSheet-cell">
+                    
+                        <table>
+                            <tr> 
+                                <td> <p class="text-center"> Health <br> 2</p> <td>
+                                <td> <p class="text-center"> Dexterity <br> 2</p> </td>
+                                <td> <p class="text-center"> Constitution <br> 2</p> </td>
+                                <td> <p class="text-center"> Intelligence <br> 2</p> </td>
+                                <td> <p class="text-center"> Wisdom <br> 2</p> </td>
+                                <td> <p class="text-center"> Charisma <br> 2</p> </td>
+                            </tr>
+                        </table>
+                    
+                    </td>
+
                 </tr>
 
                 <tr>
-                <td class="charSheet-cell">3</td>
-                <td>4</td>
-                <td>5</td>
+                    <td class="charSheet-cell">3</td>
+                    <td>5</td>
                 </tr>
 
             </tbody>
