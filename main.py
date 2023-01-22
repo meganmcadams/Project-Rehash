@@ -15,5 +15,9 @@ def join():
 def officers():
     return render_template('officers.html')
 
+@app.route('/character_sheet/')
+def character_sheet():
+    return render_template('character_sheet.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
