@@ -26,10 +26,22 @@
     transition-property: filter;
     transition-duration: 0.5s; 
 }
+
 .btn:hover {
     filter: brightness(120%);
     transition-property: filter;
     transition-duration: 0.5s;
+}
+
+.secondary-to-primary-btn {
+    background-color: var(--primary-grey);
+    color: white;
+    border: none;
+}
+
+.secondary-to-primary-btn-active {
+    background-color: var(--primary-red);
+    color: white;
 }
 
 .secondary-btn {
@@ -41,20 +53,40 @@
 
 .charSheet-base {
 
-    max-width: 90rem;
-    margin: auto;
+    /* max-width: 90rem; */
+
     margin-top: 5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    width: auto;
 
 }
 
 .charSheet-body {
-
-    background-color: var(--primary-white);
+    
+    width: auto;
+    float:top;
+    margin: auto;
+    background: var(--primary-white);
 
 }
 
 .charSheet-cell {
 
-    max-width: 4rem;
+    padding: 0;
+
+}
+
+/* Tables */
+
+.table td {
+
+    padding: 0;
+
+}
+
+.nav-tabs {
+
+    background-color: var(--primary-grey);
 
 }
