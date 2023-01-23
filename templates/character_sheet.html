@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
-    <div class="charSheet-base">
+    <div class="charSheet-base table-responsive">
         
         <h1>Character Name <button class="btn" style="float: right">Edit</button> </h1>
 
@@ -9,12 +9,14 @@
             <tbody>
 
                 <tr>
-                    <td class="charSheet-cell">
+                    <td>
                         <table>
                             <tr> 
-                                <td> <p class="text-center"> Strength <br> 2</p> <td>
+                                <td> <p class="text-center"> Strength <br> 2</p> </td>
                                 <td> <p class="text-center"> Dexterity <br> 2</p> </td>
                                 <td> <p class="text-center"> Constitution <br> 2</p> </td>
+                            </tr>
+                            <tr>
                                 <td> <p class="text-center"> Intelligence <br> 2</p> </td>
                                 <td> <p class="text-center"> Wisdom <br> 2</p> </td>
                                 <td> <p class="text-center"> Charisma <br> 2</p> </td>
@@ -26,12 +28,22 @@
                     
                         <table>
                             <tr> 
-                                <td> <p class="text-center"> Health <br> 2</p> <td>
-                                <td> <p class="text-center"> Dexterity <br> 2</p> </td>
-                                <td> <p class="text-center"> Constitution <br> 2</p> </td>
-                                <td> <p class="text-center"> Intelligence <br> 2</p> </td>
-                                <td> <p class="text-center"> Wisdom <br> 2</p> </td>
-                                <td> <p class="text-center"> Charisma <br> 2</p> </td>
+                                <td> <p class="text-center"> Health <br> 2</p> </td>
+                                <td> <p class="text-center"> Conditions <br> 2</p> </td>
+                                <td>
+                                    <table>
+                                        <tr> 
+                                            <td> <p class="text-center"> Speed <br> 2</p> </td>
+                                            <td> <p class="text-center"> Proficiency <br> 2</p> </td>
+                                        </tr>
+                                        <tr>
+                                            <td> <p class="text-center"> Initiative <br> 2</p> </td>
+                                            <td> <p class="text-center"> Inspiration <br> 2</p> </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                
+                                
                             </tr>
                         </table>
                     
@@ -41,7 +53,35 @@
 
                 <tr>
                     <td class="charSheet-cell">3</td>
-                    <td>5</td>
+                    <td> <!-- Tabs -->
+
+                        <ul id="secondary-to-primary-container" class="nav nav-tabs">
+                            <li class=""><button class="secondary-to-primary-btn-id secondary-to-primary-btn secondary-to-primary-btn-active" data-toggle="tab" href="#home">Actions & Spells</button></li>
+                            <li><button class="secondary-to-primary-btn-id secondary-to-primary-btn" data-toggle="tab" href="#menu1">Inventory</button></li>
+                            <li><button class="secondary-to-primary-btn-id secondary-to-primary-btn" data-toggle="tab" href="#menu2">Notes</button></li>
+                            <li><button class="secondary-to-primary-btn-id secondary-to-primary-btn" data-toggle="tab" href="#menu3">Proficiencies</button></li>
+                        </ul>
+                          
+                        <div class="tab-content">
+                            <div id="home" class="tab-pane fade in active">
+                                <h3>Actions & Spells</h3>
+                                <p>Some content.</p>
+                            </div>
+                            <div id="menu1" class="tab-pane fade">
+                                <h3>Inventory</h3>
+                                <p>Some content in menu 1.</p>
+                            </div>
+                            <div id="menu2" class="tab-pane fade">
+                                <h3>Notes</h3>
+                                <p>Some content in menu 2.</p>
+                            </div>
+                            <div id="menu3" class="tab-pane fade">
+                                <h3>Proficiencies</h3>
+                                <p>Some content in menu 2.</p>
+                            </div>
+                        </div>
+
+                    </td>
                 </tr>
 
             </tbody>
