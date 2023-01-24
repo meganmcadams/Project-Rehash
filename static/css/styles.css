@@ -3,12 +3,15 @@
     --primary-red: #953130;
     --primary-grey: #545454;
     --primary-white: #F2F0EB;
+
     --secondary-dark-red: #792322;
     --secondary-red: #B26161;
     --secondary-light-red: #CFA1A1;
     --secondary-white: #FFFFFF;
+
     --accent-dark-blue: #177E89;
     --accent-blue: #5CB4BD;
+    --accent-white: #F1F1F1;
     
 }
 
@@ -85,8 +88,15 @@
 
 }
 
+.internal-table {
+    margin: 2rem;
+    background-color: var(--accent-white);
+}
+
+.cell-content {
+    padding: 1rem;
+}
+
 .nav-tabs {
-
     background-color: var(--primary-grey);
-
 }
